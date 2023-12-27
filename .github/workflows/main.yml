@@ -2,8 +2,6 @@ name: CI
 on:
  
   push:
-  branches: 
-    - feature-ms-jorgecarvajal-mensaje
   workflow_dispatch:
  
 jobs:
@@ -15,7 +13,6 @@ jobs:
       - name: Build
         run: |
           echo "Building"
-	  
       - name: SONAR
         run: |
           echo "Sonar"     
