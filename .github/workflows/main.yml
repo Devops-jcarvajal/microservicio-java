@@ -19,3 +19,4 @@ jobs:
           echo "Sonar"     
           chmod +x gradlew
           ./gradlew build sonar -Dsonar.token=${{secrets.TOKEN_SONARCLOUD_JAVA}} 
+          ./gradlew jacocoTestReport sonar -Dsonar.token=${{secrets.TOKEN_SONARCLOUD_JAVA}} 
