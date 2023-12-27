@@ -1,0 +1,21 @@
+
+
+name: CI
+on:
+  branches: 
+    - feature-ms-jorgecarvajal-mensaje
+  push:
+	workflow_dispatch:
+ 
+jobs:
+  build:
+	
+    runs-on: ubuntu-latest
+		
+    steps:
+		
+      - uses: actions/checkout@v3
+
+      - name: BUILD
+        run: |
+          echo "BUILDING"
