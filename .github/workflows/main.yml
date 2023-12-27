@@ -2,10 +2,11 @@
 
 name: CI
 on:
-  branches: 
-    - feature-ms-jorgecarvajal-mensaje
+ 
   push:
-	workflow_dispatch:
+   branches: 
+    - feature-ms-jorgecarvajal-mensaje
+  workflow_dispatch:
  
 jobs:
   build:
